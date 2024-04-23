@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://www.fredpizza.co.kr/k_front/plugin/swiper11.0.4/swiper.css" />
+    <link rel="stylesheet" href="./assets/css/layout.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script> 
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
+    <script src="https://www.fredpizza.co.kr/k_front/plugin/swiper11.0.4/swiper.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+    <script src="./assets/js/script.js" defer></script>
+    
+</head>
+<body>
+
+    <div class="modal-bg on">
+        <div class="modal"></div>
+        <div class="wrap">
+            <div class="modal-content">
+                <div class="profit left">
+                    <img src="./assets/images/./modal-popup-1.jpg" alt="">
+                    <div class="text-box">
+                        <button class="closetoday">오늘 하루 그만보기</button>
+                        <button class="close">닫기</button>
+                    </div>
+                </div>
+                <div class="profit right">
+                    <img src="./assets/images/modal-popup-2.jpg" alt="">
+                    <div class="text-box">
+                        <button class="closetoday">오늘 하루 그만보기</button>
+                        <button class="close">닫기</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header class="header">
+        <div class="wrap">
+            <h1>
+                <a href="">
+                    <img src="./assets/images/logo.png" class="white" alt="">
+                    <img src="./assets/images/logo_red.png" class="red" alt="">
+                </a>
+            </h1>
+            <nav class="gnb">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="" class="title">브랜드</a>
+                        <ul class="sub-nav">
+                            <li><a href="">브랜드 스토리</a></li>
+                            <li><a href="">연혁</a></li>
+                            <li><a href="">오시는 길</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="title">메뉴</a>
+                        <ul class="sub-nav">
+                            <li><a href="">피자</a></li>
+                            <li><a href="">사이드</a></li>
+                            <li><a href="">세트</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="title">매장</a>
+                        <ul class="sub-nav">
+                            <li><a href="">매장 찾기</a></li>
+                            <li><a href="">우수 가맹점</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="title">뉴스</a>
+                        <ul class="sub-nav">
+                            <li><a href="">새소식</a></li>
+                            <li><a href="">이벤트</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="title">창업</a>
+                        <ul class="sub-nav">
+                            <li><a href="">창업 경쟁력</a></li>
+                            <li><a href="">창업 안내</a></li>
+                            <li><a href="">창업비용 및 절차</a></li>
+                            <li><a href="">가맹 FAQ</a></li>
+                            <li><a href="">창업 문의</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="mobile">
+                <div class="ham">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+
+        <section class="sc-banner">
+            <div class="sticky">
+                <div class="swiper bg-slide">
+
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./assets/images/swipper-banner1.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/images/swipper-banner2.jpeg" alt="">
+                        </div>
+                    </div>
+                   
+                </div>
+
+                <div class="swiper txt-slide">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide text-content">
+                            <h2 class="main-title">
+                                1꽉 찬 토핑!<br>이러니까 아무도<br>못 비비지!
+                            </h2>
+                            <span class="sub-title">있었지만 없었던 피자, 프레드 피자!</span>
+                        </div>
+                        
+                        <div class="swiper-slide text-content">
+                            <h2 class="main-title">
+                                미트X미트X미트!<br>극강의 미트 토핑<br>메가디럭스피자
+                            </h2>
+                            <span class="sub-title">육즙 가득한 고기와 신선한 야채의 조화</span>
+                        </div>
+                    </div>
+                    <div class="slide-control">
+                        <div class="pagination">
+                            <div class="curr" area-label="현재페이지번호"></div>
+                            <div class="progress" area-label="페이지그래프"></div>
+                            <div class="total" area-label="총 페이지 번호"></div>
+                        </div>
+                        <div class="arrow">
+                            <button class="btn-prev" area-label="이전슬라이드"></button>
+                            <button class="btn-next" area-label="다음슬라이드"></button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- <div class="inner"> -->
+        <section class="sc-bestmenu">
+            <h2 class="title"><span class="text">Fred Best Menu</span></h2>
+            <div class="swiper bestmenu">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                    <a href="">
+                        <div class="badge"><img src="./assets/images/pizza-basilbutter.png" alt=""></div>
+                        <h3 class="korean">바질버터관자피자</h3>
+                        <span class="english">Basil Butter Scallop Pizza</span>
+                    </a>
+                    </div>
+                    <div class="swiper-slide">
+                    <a href="">
+                        <div class="badge"><img src="./assets/images/pizza-hawaian.png" alt=""></div>
+                        <h3 class="korean">하와이안피자</h3>
+                        <span class="english">Hawaiian Pizza</span>
+                    </a>
+                    </div>
+                    <div class="swiper-slide">
+                    <a href="">
+                        <div class="badge"><img src="./assets/images/pizza-quatercheese.jpeg" alt=""></div>
+                        <img src="./assets/images/new.png" class="new" alt="">
+                        <h3 class="korean">쿼터치즈벅피자</h3>
+                        <span class="english">Mega Deluxe Pizza</span>
+                        
+                    </a>
+                    </div>
+                    <div class="swiper-slide">
+                    <a href="">
+                        <div class="badge"><img src="./assets/images/pizza-galicshrimp.png" alt=""></div>
+                        <img src="./assets/images/new.png" class="new" alt="">
+                        <h3 class="korean">갈릭쉬림플렉스피자</h3>
+                        <span class="english">Garlic Shrimflex Pizza</span>
+                    </a>
+                    </div>
+                    <div class="swiper-slide">
+                    <a href="">
+                        <div class="badge"><img src="./assets/images/pizza-megadelux.png" alt=""></div>
+                        <img src="./assets/images/new.png" class="new" alt="">
+                        <h3 class="korean">메가디럭스피자</h3>
+                        <span class="english">Mega Deluxe Pizza</span>
+                    </a>
+                    </div>
+                    <div class="swiper-slide">
+                    <a href="">
+                        <div class="badge"><img src="./assets/images/pizza-pepperoni.png" alt=""></div>
+                        <img src="./assets/images/best.png" class="new" alt="">
+                        <h3 class="korean">페퍼로니피자</h3>
+                        <span class="english">Pepperoni Pizza</span>
+                    </a>
+                    </div>
+                    <div class="swiper-slide">
+                    <a href="">
+                        <div class="badge"><img src="./assets/images/pizza-shrimflex.png" alt=""></div>
+                        <img src="./assets/images/best.png" class="new" alt="">
+
+                        <h3 class="korean">쉬림플렉스피자</h3>
+                        <span class="english">Shrimflex Pizza</span>
+                    </a>
+                    </div>
+                    <div class="swiper-slide">
+                    <a href="">
+                        <div class="badge"><img src="./assets/images/pizza-doublebulgogi.png" alt=""></div>
+                        <h3 class="korean">더블불고기피자</h3>
+                        <span class="english">Double Bulgogi Pizza</span>
+                    </a>
+                    </div>
+                    <div class="swiper-slide">
+                    <a href="">
+                        <div class="badge"><img src="./assets/images/pizza-baconpotato.png" alt=""></div>
+                        <h3 class="korean">베이컨포테마요피자</h3>
+                        <span class="english">Bacon Potato Mayo Pizza</span>
+                    </a>
+                    </div>
+                    <div class="swiper-slide">
+                    <a href="">
+                        <div class="badge"><img src="./assets/images/pizza-supercombination.png" alt=""></div>
+                        <img src="./assets/images/best.png" class="new" alt="">
+
+                        <h3 class="korean">슈퍼콤비네이션피자</h3>
+                        <span class="english">Super Combination Pizza</span>
+                    </a>
+                    </div>
+                </div>
+                
+                <div class="swiper-button-prev circle"></div>
+                <div class="swiper-button-next circle"></div>
+                
+                </div>
+        </section>
+        <!-- </div> -->
+        <section class="sc-promotionvideo">
+            <div class="bg"><img src="./assets/images/s3_bg.png" alt=""></div>
+            <div class="wrap">
+                <span class="title">
+                    Promotion Video
+                </span>
+                <div class="video-box">
+                    <iframe src="https://www.youtube.com/embed/gkga7Oz90v0?si=rWJ-qeLH_AIj2rMC&amp;mute=1&amp;rel=0&amp;autoplay=1" allowfullscreen="" frameborder="0"></iframe>
+                </div>
+                
+            </div>
+            <div class="marquee top">
+                <div class="txt">
+                    <strong class="text-white">
+                        THE MOST DELICIOUS CHOICE!
+                    </strong>
+                    <span class="text-red">
+                        THE MOST DELICIOUS CHOICE!
+                    </span>
+                </div>
+                <div class="txt">
+                    <strong class="text-white">
+                        THE MOST DELICIOUS CHOICE!
+                    </strong>
+                    <span class="text-red">
+                        THE MOST DELICIOUS CHOICE!
+                    </span>
+                </div>
+                <div class="txt">
+                    <strong class="text-white">
+                        THE MOST DELICIOUS CHOICE!
+                    </strong>
+                    <span class="text-red">
+                        THE MOST DELICIOUS CHOICE!
+                    </span>
+                </div>
+                <div class="txt">
+                    <strong class="text-white">
+                        THE MOST DELICIOUS CHOICE!
+                    </strong>
+                    <span class="text-red">
+                        THE MOST DELICIOUS CHOICE!
+                    </span>
+                </div>
+            </div>
+            <div class="marquee bot">
+                <div class="txt">
+                    <strong class="text-white">
+                        THE MOST DELICIOUS CHOICE!
+                    </strong>
+                    <span class="text-red">
+                        THE MOST DELICIOUS CHOICE!
+                    </span>
+                </div>
+                <div class="txt">
+                    <strong class="text-white">
+                        THE MOST DELICIOUS CHOICE!
+                    </strong>
+                    <span class="text-red">
+                        THE MOST DELICIOUS CHOICE!
+                    </span>
+                </div>
+                <div class="txt">
+                    <strong class="text-white">
+                        THE MOST DELICIOUS CHOICE!
+                    </strong>
+                    <span class="text-red">
+                        THE MOST DELICIOUS CHOICE!
+                    </span>
+                </div>
+                <div class="txt">
+                    <strong class="text-white">
+                        THE MOST DELICIOUS CHOICE!
+                    </strong>
+                    <span class="text-red">
+                        THE MOST DELICIOUS CHOICE!
+                    </span>
+                </div>
+            </div>
+        </section>
+        <section class="sc-brandstory">
+            <div class="brand-inner">
+                <div class="swiper brandstory">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="image-area">
+                                <div class="image-box">
+                                    <img src="./assets/images/swiper-brand1.png" alt="">
+                                </div>
+                                <div class="text-box"></div>
+                            </div>
+
+                            <div class="text-area">
+                                <h2 class="sub-title">Brand Story</h2>
+                                <p class="desc">프레드 피자는 고객님의 일상을 행복으로 채워,<br>가장 최고의 순간이 될 수 있도록 함께 합니다.
+                                </p>
+                                <a href="" class="detail">
+                                    <span>자세히 보기</span>
+                                </a>
+                            </div>
+
+
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="image-area">
+                                <div class="image-box">
+                                    <img src="./assets/images/swiper-brand2.png" alt="">
+                                </div>
+                                <div class="text-box"></div>
+                            </div>
+
+                            <div class="text-area">
+                                <h2 class="sub-title">Brand Story</h2>
+                                <p class="desc">프레드 피자는 고객님의 일상을 행복으로 채워,<br>가장 최고의 순간이 될 수 있도록 함께 합니다.
+                                </p>
+                                <a href="" class="detail">
+                                    <span>자세히 보기</span>
+                                </a>
+                            </div>
+                            
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="image-area">
+                                <div class="image-box">
+                                    <img src="./assets/images/swiper-brand3.png" alt="">
+                                </div>
+                                <div class="text-box"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="wrap">
+                <div class="image-box"><img src="./assets/images/family-img.png" alt=""></div>
+                <div class="text-box">
+                    <h2 class="sub-title">Be a Family<br>with Fred</h2>
+                    <p class="desc">프레드와 가족이 될 가맹점 점주님을 모집합니다.</p>
+                    <a href="" class="detail">
+                        <span>자세히 보기</span>
+                    </a>
+                </div>
+            </div>
+            <div class="ojb-box">
+                <div class="left-heart">
+                    <img src="./assets/images/s4_obj_left.png" alt="">
+                </div>
+                <div class="right-heart">
+                    <img src="./assets/images/s4_obj_right.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="sc-searchstore">
+            <div class="bg">
+                <img src="./assets/images/s5_bg.png" alt="">
+            </div>
+            <div class="search-store">
+                <h2 class="title">Search Store</h2>
+                <p class="desc">가까운 프레드 피자 매장을 검색해보세요!</p>
+                <div class="search-area">
+                    <div class="bar">
+                        <span class="text">
+                            매장 찾기 바로가기
+                        </span>
+                    </div>
+                    <div class="circle">
+                        <img src="./assets/images/search_white.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sc-event">
+            <div class="wrap">
+                <div class="title-area">
+                    <h2 class="title">Event</h2>
+                    <p class="desc">프레드 피자에서 진행중인 다양한 이벤트를 즐겨보세요!</p>
+                </div>
+                <ul class="event-list">
+                    <li class="stagger">
+                        <a href="">
+                            <div class="image-box"><img src="./assets/images/event-1.jpeg" alt=""></div>
+                            <div class="text-box">
+                                <div class="title">[Event] 배민 브랜드관 할인 이벤트, 매주 화/수/목 전메뉴 3,000원 할인!</div>
+                                <div class="date">24.02.01~</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="stagger">
+                        <a href="">
+                            <div class="image-box"><img src="./assets/images/event-2.jpeg" alt=""></div>
+                            <div class="text-box">
+                                <div class="title">[Event] 배민앱 리뷰 이벤트, 리뷰 남기고 서비스 받자!</div>
+                                <div class="date">24.01.01~</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="stagger">
+                        <a href="">
+                            <div class="image-box"><img src="./assets/images/event-3.jpeg" alt=""></div>
+                            <div class="text-box">
+                                <div class="title">[Event] 프레드피자의 첫번째 모델 맞추기! GUESS WHO?</div>
+                                <div class="date">24.02.01~24.02.04</div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <a href="" class="more">
+                    <span>이벤트 더보기</span>
+                </a>
+            </div>
+        </section>
+        <section class="sc-notice">
+            <div class="bg">
+                <img src="./assets/images/s7_bg.png" alt="">
+            </div>
+            <div class="wrap">
+                <div class="left">
+                    <div class="wrapper">
+                        <div class="line first">
+                            <h2>Notice</h2>
+                            <a href="" class="more">
+                                <span id="more-text">더보기</span>
+                            </a>
+                        </div>
+                        <div class="line second">
+                            <a href="">
+                                <div class="title">프레드피자 첫 전속모델 ‘비비(BIBI)‘ 선정</div>
+                                <div class="date">2024.02.05.</div>
+                            </a>
+                        </div>
+                        <div class="line third">
+                            <a href="">
+                                <div class="title">프레드피자 신메뉴 3종 출시</div>
+                                <div class="date">2024.02.05.</div>
+                            </a>
+                        </div>
+                        <div class="line fourth">
+                            <a href="">
+                                <div class="title">한달간 BIG 창업 프로모션 지원</div>
+                                <div class="date">2024.02.05.</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="wrapper">
+                        <div class="line first">
+                            <h2>News</h2>
+                            <a href="" class="more">
+                                <span id="more-text">더보기</span>
+                            </a>
+                        </div>
+                        <div class="line second">
+                            <a href="">
+                                <div class="title">프레드피자, ‘압도적인 토핑’ CF 광고 조회수 2주만에 300만뷰 돌파</div>
+                                <div class="date">2024.02.23.</div>
+                            </a>
+                        </div>
+                        <div class="line third">
+                            <a href="">
+                                <div class="title">프레드피자 광고 모델 ‘비비’ 발탁…피자 패키지부터 모델 적극 활용</div>
+                                <div class="date">2024.02.15.</div>
+                            </a>
+                        </div>
+                        <div class="line fourth">
+                            <a href="">
+                                <div class="title">프레드피자, 가수 비비(BIBI) 광고 모델 발탁... 5일 CF 온에어</div>
+                                <div class="date">2024.02.15.</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="wrap">
+            <div class="top">
+                <a href=""><span class="bold">개인정보처리방침</span></a>
+                <a href=""><span class="last">이메일 무단 수집 거부</span></a>
+            </div>
+            <div class="mid">
+                <div class="mid-top">
+                    <span>프레드피자(주)</span>
+                    <span>대표이사: 강태성</span>
+                    <span>사업자등록번호: 891-88-02080</span>
+                    <span class="last">부산광역시 남구 진남로 29번길 28 프레드피자</span>
+                </div>
+                <div class="mid-bot">
+                    <span>이메일: fredpizza_official@naver.com</span>
+                    <span>마케팅 협업 제안: fredpizza.creative@gmail.com</span>
+                    <span class="last">가맹문의 및 고객지원: 1811-9809</span>
+                </div>
+            </div>
+            <div class="bot">
+                <div class="copy">
+                    <span class="last">Copyright ©프레드피자(주) All Rights Reserved.</span>
+                </div>
+            </div>
+            <div class="sns">
+                <a href="" class="insta"><img src="./assets/images/sns-insta.png" alt=""></a>
+                <a href="" class="facebook"><img src="./assets/images/sns-facebook.png" alt=""></a>
+                <a href="" class="kakao"><img src="./assets/images/sns-kakao.png" alt=""></a>
+                <a href="" class="youtube"><img src="./assets/images/sns-youtube.png" alt=""></a>
+            </div>
+        </div>
+    </footer>
+    <div class="dimmed">
+        <div class="inner">
+            <div class="logo">
+                <a href="">
+                    <h1>
+                        <img src="./assets/images/logo_redsub.png" alt="">
+                    </h1>
+                </a>
+            </div>
+            <div class="close-btn">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <ul class="gnb-list">
+                <li class="gnb-item">
+                    <div class="title">
+                        <span>브랜드</span>
+                        <div class="img-box">
+                            <img class="arrow" src="./assets/images/arrow_big_top.png" alt="">
+                        </div>
+                    </div>
+                    <ul class="sub-gnb">
+                        <li>브랜드 스토리</li>
+                        <li>연혁</li>
+                        <li>오시는 길</li>
+                    </ul>
+                </li>
+                <li class="gnb-item">
+                    <div class="title">
+                        <span>메뉴</span>
+                        <div class="img-box">
+                            <img class="arrow" src="./assets/images/arrow_big_top.png" alt="">
+                        </div>
+                    </div>
+                    <ul class="sub-gnb">
+                        <li>피자</li>
+                        <li>사이드</li>
+                        <li>세트</li>
+                    </ul>
+                </li>
+                <li class="gnb-item">
+                    <div class="title">
+                        <span>매장</span>
+                        <div class="img-box">
+                            <img class="arrow" src="./assets/images/arrow_big_top.png" alt="">
+                        </div>
+                    </div>
+                    <ul class="sub-gnb">
+                        <li>매장 찾기</li>
+                        <li>우수 가맹점</li>
+                    </ul>
+                </li>
+                <li class="gnb-item">
+                    <div class="title">
+                        <span>뉴스</span>
+                        <div class="img-box">
+                            <img class="arrow" src="./assets/images/arrow_big_top.png" alt="">
+                        </div>
+                    </div>
+                    <ul class="sub-gnb">
+                        <li>새소식</li>
+                        <li>이벤트</li>
+                    </ul>
+                </li>
+                <li class="gnb-item">
+                    <div class="title">
+                        <span>창업</span>
+                        <div class="img-box">
+                            <img class="arrow" src="./assets/images/arrow_big_top.png" alt="">
+                        </div>
+                    </div>
+                    <ul class="sub-gnb">
+                        <li>창업 경쟁력</li>
+                        <li>창업 안내</li>
+                        <li>창업비용 및 절차</li>
+                        <li>가맹 FAQ</li>
+                        <li>창업문의</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <!-- <div class="dimmed">
+        <div class="close-btn">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="inner">
+            <div class="logo">
+                <a href="">
+                    <h1>
+                        <img src="" alt="">
+                    </h1>
+                </a>
+            </div>
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <div>
+                        <span>브랜드</span>
+                        <div>
+                            <img src="" alt="">
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item"></li>
+                <li class="nav-item"></li>
+                <li class="nav-item"></li>
+                <li class="nav-item"></li>
+            </ul>
+        </div>
+        <div class="gray-bg"></div>
+    </div> -->
+    <div class="side-btn">
+        <button class="top">
+            <img src="./assets/images/arrow_top_white.png" alt="">
+            <span>Top</span>
+        </button>
+        <a href="" class="ask">
+            <span>가맹<br>문의</span>
+        </a>
+    </div>
+</body>
+</html>

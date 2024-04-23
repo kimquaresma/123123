@@ -1,0 +1,30 @@
+.blind{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+  }
+
+.wrap{
+  max-width: 1280px;
+  position: relative;
+  margin: 0 auto;
+  width: calc(100% - 80px);
+}
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width:1024px) {
+    
+}
+
+@media (max-width:768px) {
+    
+}
+
